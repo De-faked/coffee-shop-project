@@ -41,7 +41,11 @@ body {
 
 
 
-  
+  .fa-brands{
+    padding: 10px;
+    min-width: 40px;
+    border-radius: 50px;
+  }
 }
 
 
