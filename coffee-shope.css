@@ -43,20 +43,41 @@ body {
     background: var(--bg);
   }
 
-  .childbox-insection1 {
-    width: 320px;
-  }
-  /* .section1-img {
+  .first-second-img {
     display: flex;
-    width: 320vw;
+
   }
 
-  .section1-img img {
+  .first-second-img img {
     position: relative;
-    background-size: cover;
-    width: 320vw;
+    width: 100%;
+    height: auto;
 
-  } */
+  }
+
+  .title-sec1{
+
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+  }
+
+  .first-second-img h1{
+    color: white;
+    text-transform:uppercase;
+    text-align: center;
+
+  }
+  /* --global call for allm span h1 */
+  span h1{
+    color: burlywood;
+  }
+  
+
+
+
 
   .fa-brands {
     padding: 10px;
