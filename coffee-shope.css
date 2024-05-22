@@ -252,12 +252,18 @@ body {
 
   .our-menu-section,
   .product-sec,
-  .review-sec{ 
+  .review-sec
+  { 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 1rem;
+}
+
+.our-menu-container{
+  width: 100%;
+  height: auto;
 }
 
 .our-menu-child{
