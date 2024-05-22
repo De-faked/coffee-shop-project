@@ -116,6 +116,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
 }
 
 .our-menu-child{
@@ -123,12 +124,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem;
-  border: 1px burlywood dotted;
+  margin: 0.3rem;
+  border: 1px rgb(255, 255, 255) ridge;
   width: 100%;
   height: auto;
+}
+
+.products-logos{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
+
+.logos{
+  border: #ffffff ridge 1px;
+}
+
 
 .review-child-box{
   display: flex;
@@ -168,11 +182,31 @@ input{
   width: 90%;
   margin: 1rem;
   padding: 1rem;
+  text-align: center;
 }
 
-.fa::before{
-  color: rgb(255, 255, 255);
+.fa-input{
+  position: absolute;
+  margin: 7% 0px 0px 7%;
 }
+
+.fa-footer{
+  margin: 10px 0px 10px 0;
+}
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+
 
 
 .fa-lg-div{
@@ -181,14 +215,13 @@ input{
   justify-content: center;
   list-style:none;
   gap: 1rem;
-  padding: 10px;
-  border: 1px whitesmoke solid;
-  border-radius: 20px;
 }
 
 .footer-nav{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   
 }
 
@@ -198,6 +231,10 @@ input{
   border: 1px whitesmoke solid;
 }
 
+.brwon-title-end{
+  color: #d3ad7f;
+  text-decoration: none;
+}
 
 
 }
