@@ -44,6 +44,145 @@ body {
     background: var(--bg);
   }
 
+
+#menuToggle
+{
+  display: block;
+  position: relative ;
+  top: -50px;
+  left:0px;
+  z-index:10;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color:#d3ad7f;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  background:0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
   .first-second-img {
     display: flex;
 
@@ -98,6 +237,7 @@ body {
     font-size:x-large;
   }
 
+
   /* global call ends here */
 
   p{
@@ -105,6 +245,7 @@ body {
     font-size: 0.7rem;
     margin-top: 3px;
     margin-bottom: 3px;
+    text-align: center;
 
   }
 
@@ -122,13 +263,15 @@ body {
 .our-menu-child{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin: 0.3rem;
   border: 1px rgb(255, 255, 255) ridge;
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  gap:3px;
 }
+
 
 .products-logos{
   display: flex;
@@ -147,23 +290,42 @@ body {
 .review-child-box{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 1rem;
   margin: 0.5rem;
   border: 1px burlywood dotted;
+}
+
+.pic-img img{
+  border-radius: 5rem;
+  width: 35%;
+}
+
+
+
+.blog-child-box img{
+  width: 100%;
+  height: auto;
+}
+.blog-child-box{
+  margin: 1rem;
+  border: #ffffff 0.1px ridge;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 1rem;
+  
+}
+
+.blog-child-box h5{
+  margin:10px 0px 10px 10px;
+  color: #d3ad7f;
 }
 
 
 .blog-child-box img{
   width: 100%;
-}
-.blog-child-box{
-  margin: 1rem;
-  border: #d3ad7f 1px dotted;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 

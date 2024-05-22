@@ -12,16 +12,22 @@
 <body>
     <header>
         <img src="/Project4-advanced/Starterkit/images/logo.png" alt="" />
-        <nav>
-            <a href="#HOME">Home</a>
-            <a href="#ABOUT">About</a>
-            <a href="#MENU">
-                <menu>
-            </a>
-            <a href="#PRODUCTS">PRODUCTS</a>
-            <a href="#REVIEW">REVIEW</a>
-            <a href="#CONTACT">contact</a>
-            <a href="#BLOGS">blogs</a>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#HOME">Home</a>
+                    <a href="#ABOUT">About</a>
+                    <a href="#MENU">MENU</a>
+                    <a href="#PRODUCTS">PRODUCTS</a>
+                    <a href="#REVIEW">REVIEW</a>
+                    <a href="#CONTACT">contact</a>
+                    <a href="#BLOGS">blogs</a>
+                </ul>
+            </div>
         </nav>
     </header>
     <section class="first-second-img">
@@ -146,7 +152,7 @@
             <div>
                 <h3>Fresh Coffee</h3>
             </div>
-            <div><img src="" alt=""></div>
+            <div class="stars-icon"><img src="/Project4-advanced/Starterkit/images/stars-svgrepo-com.svg" alt=""></div>
             <div>
                 <h3>$15.99 <span>20.99</span></h3>
             </div>
@@ -161,7 +167,7 @@
             <div>
                 <h3>Fresh Coffee</h3>
             </div>
-            <div><img src="" alt=""></div>
+            <div class="stars-icon"><img src="/Project4-advanced/Starterkit/images/stars-svgrepo-com.svg" alt=""></div>
             <div>
                 <h3>$15.99 <span>20.99</span></h3>
             </div>
@@ -176,7 +182,7 @@
             <div>
                 <h3>Fresh Coffee</h3>
             </div>
-            <div><img src="" alt=""></div>
+            <div class="stars-icon"><img src="/Project4-advanced/Starterkit/images/stars-svgrepo-com.svg" alt=""></div>
             <div>
                 <h3>$15.99 <span>20.99</span></h3>
             </div>
@@ -191,33 +197,33 @@
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, magnam?</p>
             </div>
-            <div><img src="/Project4-advanced/Starterkit/images/pic-1.png" alt=""></div>
+            <div class="pic-img"><img src="/Project4-advanced/Starterkit/images/pic-1.png" alt=""></div>
             <div>
                 <h3>John Deo</h3>
             </div>
-            <div><img src="" alt=""></div>
+            <div class="stars-icon"><img src="/Project4-advanced/Starterkit/images/stars-svgrepo-com.svg" alt=""></div>
         </div>
         <div class="review-child-box">
             <div><img src="/Project4-advanced/Starterkit/images/quote-img.png" alt=""></div>
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, magnam?</p>
             </div>
-            <div><img src="/Project4-advanced/Starterkit/images/pic-2.png" alt=""></div>
+            <div class="pic-img"><img src="/Project4-advanced/Starterkit/images/pic-2.png" alt=""></div>
             <div>
                 <h3>John Deo</h3>
             </div>
-            <div><img src="" alt=""></div>
+            <div class="stars-icon"><img src="/Project4-advanced/Starterkit/images/stars-svgrepo-com.svg" alt=""></div>
         </div>
         <div class="review-child-box">
             <div><img src="/Project4-advanced/Starterkit/images/quote-img.png" alt=""></div>
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, magnam?</p>
             </div>
-            <div><img src="/Project4-advanced/Starterkit/images/pic-3.png" alt=""></div>
+            <div class="pic-img"><img src="/Project4-advanced/Starterkit/images/pic-3.png" alt=""></div>
             <div>
                 <h3>John Deo</h3>
             </div>
-            <div><img src="" alt=""></div>
+            <div class="stars-icon"><img src="/Project4-advanced/Starterkit/images/stars-svgrepo-com.svg" alt=""></div>
         </div>
     </section>
     <section class="contact-us-section">
@@ -240,7 +246,7 @@
         </div>
         <div><button>contact now</button></div>
     </section>
-    <section class="blog-sec">
+    <section class="blog-sec #Blogs">
         <div class="global-title tiltle8">
             <h1>OUR <span class="brwon-title">blogs</span></h1>
         </div>
@@ -300,12 +306,12 @@
         </div>
         <div class="footer-nav">
             <div> <button class="button-in-footer"><a href="#Home"></a>Home</button></div>
-            <div> <button class="button-in-footer"><a href=""></a>About</button></div>
-            <div> <button class="button-in-footer"><a href=""></a>Menu</button></div>
-            <div> <button class="button-in-footer"><a href=""></a>Products</button></div>
-            <div> <button class="button-in-footer"><a href=""></a>Review</button></div>
-            <div> <button class="button-in-footer"><a href=""></a>Contact</button></div>
-            <div> <button class="button-in-footer"><a href=""></a>Blogs</button></div>
+            <div> <button class="button-in-footer"><a href="#About"></a>About</button></div>
+            <div> <button class="button-in-footer"><a href="#Menu"></a>Menu</button></div>
+            <div> <button class="button-in-footer"><a href="#Products"></a>Products</button></div>
+            <div> <button class="button-in-footer"><a href="#Review"></a>Review</button></div>
+            <div> <button class="button-in-footer"><a href="#Contact"></a>Contact</button></div>
+            <div> <button class="button-in-footer"><a href="#Blogs"></a>Blogs</button></div>
         </div>
         <div class="footer-copy-rights">
             <h6>Created By <span class="brwon-title-end">Abdulrahman Qeshra</span> All Rights Reserved</h6>
