@@ -37,6 +37,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
+    
   }
 
   body {
@@ -71,19 +72,134 @@ body {
 
   }
   /* --global call for allm span h1 */
-  span h1{
-    color: burlywood;
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  button{
+    background-color: #d3ad7f;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0px;
+    margin: 10px;
+
+  }
+
+  span{
+    text-decoration: line-through;
+    color: lightgray;
+    font-size: 10px;
   }
   
-
-
-
-
-  .fa-brands {
-    padding: 10px;
-    min-width: 40px;
-    border-radius: 50px;
+   .brwon-title {
+    color: burlywood;
+    text-decoration: none;
+    font-size:x-large;
   }
+
+  /* global call ends here */
+
+  p{
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+  }
+
+
+  .our-menu-section,
+  .product-sec,
+  .review-sec{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-menu-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  border: 1px burlywood dotted;
+  width: 100%;
+  height: auto;
+
+}
+
+.review-child-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  border: 1px burlywood dotted;
+}
+
+
+.blog-child-box img{
+  width: 100%;
+}
+.blog-child-box{
+  margin: 1rem;
+  border: #d3ad7f 1px dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+iframe{
+  border:0;
+  width: 90%;
+  margin: 1rem;
+
+
+}
+
+input{
+  background-color: black;
+  border: 1px solid whitesmoke;
+  width: 90%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.fa::before{
+  color: rgb(255, 255, 255);
+}
+
+
+.fa-lg-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style:none;
+  gap: 1rem;
+  padding: 10px;
+  border: 1px whitesmoke solid;
+  border-radius: 20px;
+}
+
+.footer-nav{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.button-in-footer{
+  background-color: black;
+  color: whitesmoke;
+  border: 1px whitesmoke solid;
+}
+
+
+
 }
 
 @media (max-width: 768px) {
