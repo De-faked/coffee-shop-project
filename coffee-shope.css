@@ -455,6 +455,7 @@ body {
   h1 {
     text-align: center;
     text-transform: uppercase;
+    color: whitesmoke;
   }
 
   button {
@@ -525,14 +526,20 @@ body {
     gap: 3px;
   } */
 
-  .our-menu-section{
+  .our-menu-section,
+  .product-sec,
+  .review-sec,
+  .blog-sec{
     display: flex;
     flex-wrap: wrap;
     width: 100%; /* Ensures the container takes the full width */
     justify-content: center; /* Center align items if needed */
   }
   
-  .our-menu-container {
+  .our-menu-container,
+  .product-container,
+  .review-container,
+  .blog-container{
     display: flex; /* Ensure it's a flex container */
     flex-wrap: wrap; /* Enable wrapping */
     width: 100%; /* Full width to align with parent */
@@ -550,12 +557,24 @@ body {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 
+  .our-menu-child-product {
+    display: flex;
+    flex-direction: column; /* Ensure content is stacked vertically */
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50%; /* Adjust width as needed to trigger wrapping */
+    box-sizing: border-box;
+
+  }
+
   .products-logos {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: .625rem;
+    margin-bottom: .625rem;
 
   }
 
@@ -563,15 +582,23 @@ body {
     border: #ffffff ridge 1px;
   }
 
+  .review-container{
+    display: flex; /* Ensure it's a flex container */
+    flex-wrap: wrap; /* Enable wrapping */
+    width: 100%; /* Full width to align with parent */
+    justify-content: center; /* Center align items if needed */
+  }
+
 
   .review-child-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Ensure content is stacked vertically */
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 1rem;
-    margin: 0.5rem;
-    border: 1px burlywood dotted;
+    margin: 0.3rem;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50%; /* Adjust width as needed to trigger wrapping */
+    box-sizing: border-box;
   }
 
   .pic-img img {
@@ -587,6 +614,7 @@ body {
   }
 
   .blog-child-box {
+    width: 50%;
     margin: 1rem;
     border: #ffffff 0.1px ridge;
     display: flex;
