@@ -37,7 +37,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
-    
+
   }
 
   body {
@@ -45,143 +45,132 @@ body {
   }
 
 
-#menuToggle
-{
-  display: block;
-  position: relative ;
-  top: -50px;
-  left:0px;
-  z-index:10;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: -50px;
+    left: 0px;
+    z-index: 10;
 
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
+    -webkit-user-select: none;
+    user-select: none;
+  }
 
-#menuToggle a:hover
-{
-  color:#d3ad7f;
-}
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
 
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
+  #menuToggle a:hover {
+    color: #d3ad7f;
+  }
 
-/*
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
  * Just a quick hamburger
  */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   background:0.5s cubic-bezier(0.77,0.2,0.05,1.0);
               opacity 0.55s ease; */
-}
+  }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
 
-/* 
+  /* 
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
 
-/*
+  /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
 
-/*
+  /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
+  #menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
 
-/*
+  /*
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
 
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
 
-/*
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
+  #menuToggle input:checked~ul {
+    transform: none;
+  }
 
   .first-second-img {
     display: flex;
@@ -195,7 +184,7 @@ body {
 
   }
 
-  .title-sec1{
+  .title-sec1 {
 
     align-items: center;
     position: absolute;
@@ -204,19 +193,20 @@ body {
     margin-top: -200px;
   }
 
-  .first-second-img h1{
+  .first-second-img h1 {
     color: white;
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-align: center;
 
   }
+
   /* --global call for allm span h1 */
   h1 {
     text-align: center;
     text-transform: uppercase;
   }
 
-  button{
+  button {
     background-color: #d3ad7f;
     padding: 0.4rem;
     border: none;
@@ -225,22 +215,22 @@ body {
 
   }
 
-  span{
+  span {
     text-decoration: line-through;
     color: lightgray;
     font-size: 10px;
   }
-  
-   .brwon-title {
+
+  .brwon-title {
     color: burlywood;
     text-decoration: none;
-    font-size:x-large;
+    font-size: x-large;
   }
 
 
   /* global call ends here */
 
-  p{
+  p {
     color: white;
     font-size: 0.7rem;
     margin-top: 3px;
@@ -252,164 +242,169 @@ body {
 
   .our-menu-section,
   .product-sec,
-  .review-sec
-  { 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
+  .review-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .our-menu-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .our-menu-child {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0.3rem;
+    border: 1px rgb(255, 255, 255) ridge;
+    width: 100%;
+    /* height: auto; */
+    gap: 3px;
+  }
+
+
+  .products-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .logos {
+    border: #ffffff ridge 1px;
+  }
+
+
+  .review-child-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px burlywood dotted;
+  }
+
+  .pic-img img {
+    border-radius: 5rem;
+    width: 35%;
+  }
+
+
+
+  .blog-child-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-child-box {
+    margin: 1rem;
+    border: #ffffff 0.1px ridge;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+
+  }
+
+  .blog-child-box h5 {
+    margin: 10px 0px 10px 10px;
+    color: #d3ad7f;
+  }
+
+
+  .blog-child-box img {
+    width: 100%;
+  }
+
+
+
+  iframe {
+    border: 0;
+    width: 90%;
+    margin: 1rem;
+
+
+  }
+
+  input {
+    background-color: black;
+    border: 1px solid whitesmoke;
+    width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .fa-input {
+    position: absolute;
+    margin: 7% 0px 0px 7%;
+  }
+
+  .fa-footer {
+    margin: 10px 0px 10px 0;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+
+
+
+  .fa-lg-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .button-in-footer {
+    background-color: black;
+    color: whitesmoke;
+    border: 1px whitesmoke solid;
+  }
+
+  .brwon-title-end {
+    color: #d3ad7f;
+    text-decoration: none;
+  }
+
+
 }
 
-.our-menu-container{
-  width: 100%;
-  height: auto;
-}
-
-.our-menu-child{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  margin: 0.3rem;
-  border: 1px rgb(255, 255, 255) ridge;
-  width: 100%;
-  /* height: auto; */
-  gap:3px;
-}
-
-
-.products-logos{
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-
-.logos{
-  border: #ffffff ridge 1px;
-}
-
-
-.review-child-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  margin: 0.5rem;
-  border: 1px burlywood dotted;
-}
-
-.pic-img img{
-  border-radius: 5rem;
-  width: 35%;
-}
-
-
-
-.blog-child-box img{
-  width: 100%;
-  height: auto;
-}
-.blog-child-box{
-  margin: 1rem;
-  border: #ffffff 0.1px ridge;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  gap: 1rem;
-  
-}
-
-.blog-child-box h5{
-  margin:10px 0px 10px 10px;
-  color: #d3ad7f;
-}
-
-
-.blog-child-box img{
-  width: 100%;
-}
-
-
-
-iframe{
-  border:0;
-  width: 90%;
-  margin: 1rem;
-
-
-}
-
-input{
-  background-color: black;
-  border: 1px solid whitesmoke;
-  width: 90%;
-  margin: 1rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-.fa-input{
-  position: absolute;
-  margin: 7% 0px 0px 7%;
-}
-
-.fa-footer{
-  margin: 10px 0px 10px 0;
-}
-a:link { 
-  text-decoration: none; 
-} 
-a:visited { 
-  text-decoration: none; 
-} 
-a:hover { 
-  text-decoration: none; 
-} 
-a:active { 
-  text-decoration: none; 
-}
-
-
-
-
-.fa-lg-div{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style:none;
-  gap: 1rem;
-}
-
-.footer-nav{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-}
-
-.button-in-footer{
-  background-color: black;
-  color: whitesmoke;
-  border: 1px whitesmoke solid;
-}
-
-.brwon-title-end{
-  color: #d3ad7f;
-  text-decoration: none;
-}
-
-
-}
-
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
   :root {
     --main-color: #d3ad7f;
     --black: #13131a;
@@ -427,11 +422,269 @@ a:active {
   body {
     background: var(--bg);
   }
+
+  .first-second-img {
+    display: flex;
+
+  }
+
+  .first-second-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .title-sec1 {
+
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+  }
+
+  .first-second-img h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+
+  /* --global call for allm span h1 */
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  button {
+    background-color: #d3ad7f;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0px;
+    margin: 10px;
+
+  }
+
+  span {
+    text-decoration: line-through;
+    color: lightgray;
+    font-size: 10px;
+  }
+
+  .brwon-title {
+    color: burlywood;
+    text-decoration: none;
+    font-size: x-large;
+  }
+
+
+  /* global call ends here */
+
+  p {
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+
+  }
+
+
+  /* .our-menu-section,
+  .product-sec,
+  .review-sec
+  { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
 }
 
-@media (max-width: 991px) {
+  .our-menu-section {
+    flex-wrap: wrap;
+
+  }
+
+  .our-menu-container {
+    display: flex;
+    width:40%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .our-menu-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    border: 1px rgb(255, 255, 255) ridge;
+    gap: 3px;
+  } */
+
+  .our-menu-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Ensures the container takes the full width */
+    justify-content: center; /* Center align items if needed */
+  }
+  
+  .our-menu-container {
+    display: flex; /* Ensure it's a flex container */
+    flex-wrap: wrap; /* Enable wrapping */
+    width: 100%; /* Full width to align with parent */
+    justify-content: center; /* Center align items if needed */
+  }
+  
+  .our-menu-child {
+    display: flex;
+    flex-direction: column; /* Ensure content is stacked vertically */
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    border: 1px solid rgb(255, 255, 255);
+    width: 30%; /* Adjust width as needed to trigger wrapping */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .products-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .logos {
+    border: #ffffff ridge 1px;
+  }
+
+
+  .review-child-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px burlywood dotted;
+  }
+
+  .pic-img img {
+    border-radius: 5rem;
+    width: 35%;
+  }
+
+
+
+  .blog-child-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-child-box {
+    margin: 1rem;
+    border: #ffffff 0.1px ridge;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+
+  }
+
+  .blog-child-box h5 {
+    margin: 10px 0px 10px 10px;
+    color: #d3ad7f;
+  }
+
+
+  .blog-child-box img {
+    width: 100%;
+  }
+
+
+
+  iframe {
+    border: 0;
+    width: 90%;
+    margin: 1rem;
+
+
+  }
+
+  input {
+    background-color: black;
+    border: 1px solid whitesmoke;
+    width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .fa-input {
+    position: absolute;
+    margin: 7% 0px 0px 7%;
+  }
+
+  .fa-footer {
+    margin: 10px 0px 10px 0;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+
+
+
+  .fa-lg-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .button-in-footer {
+    background-color: black;
+    color: whitesmoke;
+    border: 1px whitesmoke solid;
+  }
+
+  .brwon-title-end {
+    color: #d3ad7f;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 991px) {
   @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
   :root {
     --main-color: #d3ad7f;
     --black: #13131a;
