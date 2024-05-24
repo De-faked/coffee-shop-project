@@ -240,7 +240,7 @@ body {
   }
 
 
-  .our-menu-section,
+  .menu-sec,
   .product-sec,
   .review-sec {
     display: flex;
@@ -250,12 +250,12 @@ body {
     margin: 1rem;
   }
 
-  .our-menu-container {
+  .menu-container {
     width: 100%;
     height: auto;
   }
 
-  .our-menu-child {
+  .menu-child {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -299,28 +299,29 @@ body {
 
 
 
-  .blog-child-box img {
+  .blog-child img {
     width: 100%;
     height: auto;
   }
 
-  .blog-child-box {
+  .blog-child {
     margin: 1rem;
     border: #ffffff 0.1px ridge;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     height: auto;
     gap: 1rem;
 
   }
 
-  .blog-child-box h5 {
+  .blog-child h5 {
     margin: 10px 0px 10px 10px;
     color: #d3ad7f;
   }
 
 
-  .blog-child-box img {
+  .blog-child img {
     width: 100%;
   }
 
@@ -526,7 +527,7 @@ body {
     gap: 3px;
   } */
 
-  .our-menu-section,
+  .menu-section,
   .product-sec,
   .review-sec,
   .blog-sec{
@@ -536,17 +537,16 @@ body {
     justify-content: center; /* Center align items if needed */
   }
   
-  .our-menu-container,
-  .product-container,
-  .review-container,
-  .blog-container{
+  .menu-container,
+  .product-container
+  {
     display: flex; /* Ensure it's a flex container */
     flex-wrap: wrap; /* Enable wrapping */
     width: 100%; /* Full width to align with parent */
     justify-content: center; /* Center align items if needed */
   }
   
-  .our-menu-child {
+  .our-menu-child{
     display: flex;
     flex-direction: column; /* Ensure content is stacked vertically */
     justify-content: center;
@@ -557,14 +557,14 @@ body {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 
-  .our-menu-child-product {
+  .product-child {
     display: flex;
-    flex-direction: column; /* Ensure content is stacked vertically */
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
     margin: 0.3rem;
     border: 1px solid rgb(255, 255, 255);
-    width: 50%; /* Adjust width as needed to trigger wrapping */
+    width: 50%;
     box-sizing: border-box;
 
   }
@@ -572,7 +572,10 @@ body {
   .products-logos {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    gap: 0.2rem;
     margin-top: .625rem;
     margin-bottom: .625rem;
 
@@ -580,57 +583,73 @@ body {
 
   .logos {
     border: #ffffff ridge 1px;
+    align-items: center;
+    width: 50px;
+    height: auto;
   }
 
   .review-container{
-    display: flex; /* Ensure it's a flex container */
-    flex-wrap: wrap; /* Enable wrapping */
-    width: 100%; /* Full width to align with parent */
-    justify-content: center; /* Center align items if needed */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: start;
   }
 
 
   .review-child-box {
     display: flex;
-    flex-direction: column; /* Ensure content is stacked vertically */
-    justify-content: center;
     align-items: center;
-    margin: 0.3rem;
+    flex-direction: column;
+    padding: .625rem;
+    margin: .2rem;
     border: 1px solid rgb(255, 255, 255);
-    width: 50%; /* Adjust width as needed to trigger wrapping */
+    width: 48%;
+    height: auto;
     box-sizing: border-box;
   }
 
   .pic-img img {
+    align-items: center;
     border-radius: 5rem;
     width: 35%;
   }
 
 
 
-  .blog-child-box img {
+  .blog-child img {
     width: 100%;
     height: auto;
   }
 
-  .blog-child-box {
-    width: 50%;
-    margin: 1rem;
+  .blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: start;
+  }
+
+
+  .blog-child {
+    width: 47%;
+    margin: .5rem;
     border: #ffffff 0.1px ridge;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    box-sizing: border-box;
     height: auto;
-    gap: 1rem;
+    gap: .3rem;
 
   }
 
-  .blog-child-box h5 {
+  .blog-child h5 {
     margin: 10px 0px 10px 10px;
     color: #d3ad7f;
   }
 
 
-  .blog-child-box img {
+  .blog-child img {
     width: 100%;
   }
 
@@ -651,6 +670,9 @@ body {
     margin: 1rem;
     padding: 1rem;
     text-align: center;
+  }
+  .footer-sec{
+    background-color: #232323;
   }
 
   .fa-input {
@@ -698,7 +720,7 @@ body {
   }
 
   .button-in-footer {
-    background-color: black;
+    background-color:transparent;
     color: whitesmoke;
     border: 1px whitesmoke solid;
   }
